@@ -1,5 +1,6 @@
 <template>
   <header class="header-container">
+    <div class="wrapper"></div>
     <div class="notes-header">
       <div class="logo">
         <h2>{{ title }}</h2>
@@ -21,7 +22,6 @@
   </header>
 </template>
 
-
 <script>
 export default {
   name: 'Header',
@@ -32,7 +32,7 @@ export default {
     }
   },
   methods: {
- createButtonClicked() {
+    createButtonClicked() {
       this.$emit('create-button-clicked')
     }
   }
